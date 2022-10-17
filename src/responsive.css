@@ -1,0 +1,154 @@
+:root{
+  --violet:#2d1a60;
+  --orange:#FF6645;
+  --navBarHeight:50px;
+  --blue:#45B1FF;
+  --green:#90ddae;
+}
+
+/* media queries */
+@media (max-width: 600px){
+    .approval_section{
+        background-color: #e7f0ff;
+        height: 100%;
+        padding: 2rem 0rem; 
+      }
+    .approval_section .area .master_card .card_row .card_details .image_view .approval button{
+        width: 100px;
+        height: 40px;
+    }
+    .approval_section .area .master_card .card_row .card_details .image_view img{
+        object-fit: contain;
+        width: 150px;
+        height: 100%;
+      }
+}
+@media (max-width: 768px){
+  /* hero section */
+  .hero_section .nav_bar{
+    padding:0rem 2rem;
+    display: flex;
+    align-items: center;
+  }
+  .hero_section h1{
+    font-size: 50px;
+    margin: 4rem 3rem; 
+    max-width: 20rem;
+  }
+  .hero_section .nav_bar ul li a{
+    font-family: "Bold";
+    font-size: 13px;
+  }
+
+
+  /* approval section */
+  .approval_section{
+    background-color: #e7f0ff;
+    height: 100%;
+    padding: 0rem 0rem; 
+  }
+  .approval_section .area{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-top: 2rem;
+  }
+  .approval_section .area h1{
+    padding: 0rem 2rem; 
+    font-size: 20px;
+    max-width: 25rem;
+    line-height: 30px;
+  }
+
+  .approval_section .area .master_card{
+    padding:0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .approval_section .area .master_card .heading .special{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap:15px;
+  }
+  .approval_section .area .master_card .heading p{
+    font-size: 18px;
+  }
+
+ /* card details */
+
+    .approval_section .area .master_card .card_row .card_details {
+        width: 100%;
+    }
+    
+    .approval_section .area .master_card .card_row .card_details .image_view{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        column-gap: 20px;
+        justify-content: space-between;
+        flex-basis: 50%;
+        width: 100%;
+    }
+   
+    .approval_section .area .master_card .card_row .card_details button{
+        display: none;
+    }
+    .approval_section .area .master_card .card_row .card_details .image_view .approval{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        row-gap: 30px;
+        flex-basis: 50%;
+    }
+    .approval_section .area .master_card .card_row .card_details .image_view .approval button{
+        font-size: 14px;
+    }
+    .approval_section .area .master_card .card_row .card_details .image_view .approval p{
+        font-size: 16px; 
+    }
+    .approval_section .area .master_card .card_row .card_text ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .approval_section .area .master_card .card_row .card_text ul li{
+        font-size: 16px; 
+    }
+    .approval_section .area .master_card .card_row .card_text button{
+        display: block;
+        font-size: 16px; 
+    }
+
+    .approval_section .area .master_card .footer p{
+        font-size: 16px;
+    }
+
+
+
+}
+
+@media (max-width: 900px){
+    .approval_section .area .master_card .heading .rating_area{
+        display: none;
+    }
+}
+
+@media (max-width: 1000px){
+  
+  .approval_section .area .master_card{
+      padding:4rem 2rem;
+  }
+  .approval_section .area .master_card .card_row{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+}

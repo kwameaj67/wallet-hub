@@ -1,4 +1,5 @@
-import './App.css';
+import './app.css';
+import './responsive.css';
 import Star from './components/Star/Star'
 import card from './assets/images/card.png'
 function App() {
@@ -37,7 +38,7 @@ function App() {
                   <img src={card} alt="card" className="" />
                   <div className="approval">
                     <p>Approval Odds †</p>
-                    <button>VeryGood</button>
+                    <button>Very Good</button>
                   </div>
                 </div>
                 <button>Apply Now</button>
@@ -48,6 +49,7 @@ function App() {
                   <li>Earn unlimited 1.5% cash rewards on every purcahse.</li>
                   <li>Earn unlimited 1.5% cash rewards on every...<span>show more</span></li>
                 </ul>
+                <button>Apply Now</button>
               </div>
             </div>
             <div className="footer">

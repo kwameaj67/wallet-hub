@@ -54,12 +54,16 @@ html{
   height: var(--navBarHeight);
   background-color: rgb(215, 215, 215);
 }
+.hero_section .nav_bar ul li {
+  text-align: center;
+}
 .hero_section .nav_bar ul li a{
   font-family: "Bold";
   font-size: 15px;
   color:black;
   text-decoration: none;
   transition: all 0.2s ease-out;
+  text-align: center;
 }
 .hero_section .nav_bar ul li a:hover{
   transition: all 0.2s ease-in;
@@ -69,6 +73,8 @@ html{
 /* approval section */
 .approval_section{
   background-color: #e7f0ff;
+  height: 100%;
+  padding: 5rem 4rem; 
 }
 
 .approval_section .area{
@@ -78,8 +84,7 @@ html{
   justify-content: center;
   flex-direction: column;
   row-gap: 40px;
-  padding: 4rem 4rem; 
-  height: 600px;
+ 
 }
 .approval_section .area h1{
   font-family: "Bold";
@@ -88,7 +93,6 @@ html{
 }
 .approval_section .area .master_card{
   background-color: white;
-  /* height: 400px; */
   width: 100%;
   padding:4rem 6rem;
   display: flex;
@@ -149,6 +153,7 @@ html{
   row-gap: 30px;
   justify-content: space-between;
   flex-basis: 40%;
+
 }
 .approval_section .area .master_card .card_row .card_details .image_view{
   display: flex;
@@ -156,10 +161,12 @@ html{
   align-items: flex-start;
   column-gap: 20px;
   justify-content: space-between;
+  width: 100%;
+
 }
 .approval_section .area .master_card .card_row .card_details .image_view img{
   object-fit: contain;
-  width: 100%;
+  width: 200px;
   height: 100%;
   background-color: rgb(203, 203, 203);
   flex-basis: 25%;
@@ -188,9 +195,13 @@ html{
   cursor: pointer;
   border-radius: 25px;
   font-family: "ExtraBold";
-  font-size: 16px;
+  font-size: 14px;
   color:white;
-  padding:10px 40px;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .approval_section .area .master_card .card_row .card_details button{
@@ -224,6 +235,20 @@ html{
 .approval_section .area .master_card .card_row .card_text ul li span{
   color:var(--blue);
 }
+.approval_section .area .master_card .card_row .card_text button{
+  display: none;
+  background-color: var(--orange);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "ExtraBold";
+  font-size: 20px;
+  color:white;
+  padding:15px 40px;
+  width: 100%;
+  margin-top: 2rem;
+}
 
 
 /* footer */
@@ -246,38 +271,3 @@ html{
 
 
 
-/* media queries */
-@media (max-width: 768px){
-  /* hero section */
-  .hero_section .nav_bar{
-    padding:0rem 2rem;
-    display: flex;
-    align-items: center;
-  }
-  .hero_section h1{
-    font-size: 50px;
-    margin: 4rem 3rem; 
-    max-width: 20rem;
-  }
-  .hero_section .nav_bar ul li a{
-    font-family: "Bold";
-    font-size: 13px;
-  }
-
-
-  /* approval section */
-  .approval_section .area{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    padding: 0rem 0rem; 
-    padding-top: 2rem;
-    height: 500px;
-  }
-  .approval_section .area h1{
-    padding: 0rem 2rem; 
-    font-size: 20px;
-    max-width: 25rem;
-    line-height: 30px;
-  }
-}
