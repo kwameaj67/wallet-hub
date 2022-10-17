@@ -8,12 +8,19 @@ function App() {
     <div className="app">
       <div className="hero_section">
         <div className="nav_bar">
-          <ul>
+          <ul className="desktop">
             <li><a href="/#">Navigation Link One</a></li>
             <div className="border"></div>
             <li><a href="/#">Navigation Link Two</a></li>
             <div className="border"></div>
             <li><a href="/#">Navigation Link Three</a></li>
+          </ul>
+          <ul className="mobile">
+            <li><a href="/#"> Link One</a></li>
+            <div className="border"></div>
+            <li><a href="/#"> Link Two</a></li>
+            <div className="border"></div>
+            <li><a href="/#"> Link Three</a></li>
           </ul>
         </div>
         <h1>Do the right thing .</h1>

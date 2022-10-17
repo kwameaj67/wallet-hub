@@ -40,9 +40,18 @@ html{
   color:white;
   margin: 4rem 4rem; 
 }
-.hero_section .nav_bar ul{
+
+.hero_section .nav_bar .desktop{
   list-style: none;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.hero_section .nav_bar .mobile{
+  display: none;
+  list-style: none;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;

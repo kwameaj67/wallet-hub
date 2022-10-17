@@ -16,12 +16,20 @@
     .approval_section .area .master_card .card_row .card_details .image_view .approval button{
         width: 100px;
         height: 40px;
+        font-size:10px;
     }
     .approval_section .area .master_card .card_row .card_details .image_view img{
         object-fit: contain;
         width: 150px;
         height: 100%;
-      }
+    }
+    .approval_section .area .master_card .heading .special{
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: flex-start;
+      column-gap:0px;
+    }
 }
 @media (max-width: 768px){
   /* hero section */
@@ -34,6 +42,12 @@
     font-size: 50px;
     margin: 4rem 3rem; 
     max-width: 20rem;
+  }
+  .hero_section .nav_bar .desktop{
+    display: none;
+  }
+  .hero_section .nav_bar .mobile{
+    display: flex;
   }
   .hero_section .nav_bar ul li a{
     font-family: "Bold";
@@ -71,7 +85,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     column-gap:15px;
   }
   .approval_section .area .master_card .heading p{
