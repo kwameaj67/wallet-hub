@@ -1,38 +1,283 @@
-.App {
-  text-align: center;
+:root{
+  --violet:#2d1a60;
+  --orange:#FF6645;
+  --navBarHeight:50px;
+  --blue:#45B1FF;
+  --green:#90ddae;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html{
+  scroll-behavior: smooth;
+  height: 100%;
+}
+.app {
+  width: 100%;
+  height: 100%;
+}
+/* hero section */
+.hero_section{
+  background-color: #2d1a60;
+  height: 500px;
+  padding:3rem 0rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero_section .nav_bar{
+  background-color:white;
+  padding:0rem 10rem;
+  height: var(--navBarHeight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero_section h1{
+  font-family: "ExtraBold";
+  font-size: 70px;
+  color:white;
+  margin: 4rem 4rem; 
+}
+.hero_section .nav_bar ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.hero_section .nav_bar ul .border{
+  display: block;
+  width: 2px;
+  height: var(--navBarHeight);
+  background-color: rgb(215, 215, 215);
+}
+.hero_section .nav_bar ul li a{
+  font-family: "Bold";
+  font-size: 15px;
+  color:black;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.hero_section .nav_bar ul li a:hover{
+  transition: all 0.2s ease-in;
+  color:var(--violet);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* approval section */
+.approval_section{
+  background-color: #e7f0ff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.approval_section .area{
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 40px;
+  padding: 4rem 4rem; 
+  height: 600px;
+}
+.approval_section .area h1{
+  font-family: "Bold";
+  font-size: 30px;
+  color:black;
+}
+.approval_section .area .master_card{
+  background-color: white;
+  /* height: 400px; */
+  width: 100%;
+  padding:4rem 6rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.approval_section .area .master_card .heading{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.approval_section .area .master_card .heading .rating_area{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.approval_section .area .master_card .heading .special{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 15px;
+}
+.approval_section .area .master_card .heading p{
+  font-family: "Regular";
+  font-size: 24px;
+  color:black;
+  position: relative;
+}
+.approval_section .area .master_card .heading p span{
+  font-family: "Bold";
+  font-size: 8px;
+  position: absolute;
+  top: 0px;
+  margin-right: 10px;
+}
+.approval_section .area .master_card .heading .rating_area p{
+  font-family: "Regular";
+  font-size: 16px;
+  color:black;
+}
+.approval_section .area .master_card .card_row{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 50px;
+}
+ /* card details */
+.approval_section .area .master_card .card_row .card_details{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 30px;
+  justify-content: space-between;
+  flex-basis: 40%;
+}
+.approval_section .area .master_card .card_row .card_details .image_view{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  column-gap: 20px;
+  justify-content: space-between;
+}
+.approval_section .area .master_card .card_row .card_details .image_view img{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(203, 203, 203);
+  flex-basis: 25%;
+}
+.approval_section .area .master_card .card_row .card_details .image_view .approval{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  row-gap: 30px;
+  flex-basis: 25%;
+  /* background-color: red; */
+}
+.approval_section .area .master_card .card_row .card_details .image_view .approval p{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Regular';
+  color: black;
+  max-width: 5rem;
+}
+.approval_section .area .master_card .card_row .card_details .image_view .approval button{
+  background-color: var(--green);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 25px;
+  font-family: "ExtraBold";
+  font-size: 16px;
+  color:white;
+  padding:10px 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.approval_section .area .master_card .card_row .card_details button{
+  background-color: var(--orange);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "ExtraBold";
+  font-size: 20px;
+  color:white;
+  padding:15px 40px;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ /* card text */
+.approval_section .area .master_card .card_row .card_text{
+  flex-basis: 60%;
+  /* background-color: blue; */
+}
+.approval_section .area .master_card .card_row .card_text ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.approval_section .area .master_card .card_row .card_text ul li{
+  font-family: "Regular";
+  font-size: 20px;
+  color: black;
+}
+.approval_section .area .master_card .card_row .card_text ul li span{
+  color:var(--blue);
+}
+
+
+/* footer */
+.approval_section .area .master_card .footer{
+  width: 100%;
+}
+.approval_section .area .master_card .footer .border{
+  display: block;
+  background-color:  rgb(203, 203, 203);
+  height: 3px;
+  width: 100%;
+}
+.approval_section .area .master_card .footer p{
+  font-family: "Regular";
+  font-size: 20px;
+  color:var(--blue);
+  margin-top: 1.5rem;
+}
+
+
+
+
+/* media queries */
+@media (max-width: 768px){
+  /* hero section */
+  .hero_section .nav_bar{
+    padding:0rem 2rem;
+    display: flex;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .hero_section h1{
+    font-size: 50px;
+    margin: 4rem 3rem; 
+    max-width: 20rem;
+  }
+  .hero_section .nav_bar ul li a{
+    font-family: "Bold";
+    font-size: 13px;
+  }
+
+
+  /* approval section */
+  .approval_section .area{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0rem 0rem; 
+    padding-top: 2rem;
+    height: 500px;
+  }
+  .approval_section .area h1{
+    padding: 0rem 2rem; 
+    font-size: 20px;
+    max-width: 25rem;
+    line-height: 30px;
   }
 }
