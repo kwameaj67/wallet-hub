@@ -2,6 +2,7 @@ import './app.css';
 import './responsive.css';
 import Star from './components/Star/Star'
 import card from './assets/images/card.png'
+import wallet_bg from './assets/images/wallet_bg.png'
 function App() {
 
   return (
@@ -23,6 +24,7 @@ function App() {
             <li><a href="/#"> Link Three</a></li>
           </ul>
         </div>
+        <img src={wallet_bg} alt="wallet"/>
         <h1>Do the right thing .</h1>
       </div>
       <div className="approval_section">
