@@ -84,6 +84,7 @@
     align-items: flex-start;
     justify-content: flex-end;
     padding-top: 2rem;
+    row-gap: 20px;
   }
   .approval_section .area h1{
     padding: 0rem 2rem; 
